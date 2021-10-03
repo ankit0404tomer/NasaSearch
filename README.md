@@ -31,7 +31,7 @@ The main data models used are:
     - It holds the final data values
     - It hold information like color, text with proper properties and visibility information of the views.
     - it avoid business logic, so we can make it simple to use when binding each time.
-    - We use custom kotlin converter classes for this conversion. Eg: `NewsListViewStateConverter.kt`
+    - We use custom kotlin converter classes for this conversion. Eg: `ImageListViewStateConverter.kt`
     - Eg: `ImageListViewState.kt`
 - **`**NasaBackend.kt:`**
     - Retrofit Interface class for backend API.
@@ -43,7 +43,7 @@ The main data models used are:
     - Eg: `NasaApiFetcher.kt`
 - **`**Repository.kt:`**
     - Repository is responsible for composing the backend fetcher and convert it into ViewState in background thread.
-    - It helps to manage/convert the data `BestSellerBooksViewStateConverter`.
+    - It helps to manage/convert the data `ImageListViewStateConverter`.
     - Handle creating different states like loading, idle and errors.
     - Eg: `NasaImageRepository.kt`
 - **`**ViewModel.kt:`**
